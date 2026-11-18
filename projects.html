@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Project case studies by Daniel Offem across biomedical engineering, robotics, healthcare technology, and software."
+    />
+    <meta name="theme-color" content="#f6f7f2" />
+    <title>Projects — Daniel Offem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="projects-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html#home" aria-label="Daniel Offem, home">
+          <span class="brand-mark">DO</span>
+          <span>DANIEL OFFEM<span class="brand-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#focus">Focus</a>
+          <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+            <span class="theme-toggle-label">Dark mode</span>
+            <span class="theme-toggle-track" aria-hidden="true"><span></span></span>
+          </button>
+          <a class="nav-cta" href="index.html#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="projects-hero">
+        <div class="container">
+          <p class="eyebrow"><span class="status-dot"></span> PROJECTS / SELECTED WORK</p>
+          <h1>Building at the intersection of <span>care, code &amp; control.</span></h1>
+          <p class="projects-intro">
+            A closer look at my work in brain-computer interfaces, healthcare technology,
+            engineering prototypes, and software development.
+          </p>
+          <div class="projects-summary">
+            <div><strong>04</strong><span>PROJECT AREAS</span></div>
+            <div><strong>200+</strong><span>MEDICAL DEVICES DOCUMENTED</span></div>
+            <div><strong>78%</strong><span>REPORTED BCI ACCURACY</span></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="project-toc container" aria-label="Projects on this page">
+        <span>JUMP TO</span>
+        <a href="#bci-project">01&nbsp; BCI robotic car</a>
+        <a href="#inventory-project">02&nbsp; Medical inventory</a>
+        <a href="#vehicle-project">03&nbsp; Electric vehicle</a>
+        <a href="#software-project">04&nbsp; Software work</a>
+      </nav>
+
+      <section class="project-details-section">
+        <div class="container project-detail-list">
+          <article class="project-detail" id="bci-project">
+            <div class="project-detail-art project-art bci-art">
+              <span class="art-index">01 — FLAGSHIP PROJECT</span>
+              <div class="signal-line signal-a"></div>
+              <div class="signal-line signal-b"></div>
+              <div class="signal-line signal-c"></div>
+              <div class="bci-device"><span>EEG</span><i></i></div>
+              <div class="bci-car"><span></span><span></span></div>
+              <span class="art-caption">THOUGHT → SIGNAL → MOTION</span>
+            </div>
+            <div class="project-detail-content">
+              <div class="project-meta"><span>BIOMEDICAL · ROBOTICS · MACHINE LEARNING</span><span>ACADEMIC PROJECT</span></div>
+              <h2>Brain-computer interface robotic car</h2>
+              <p class="project-lead">
+                A student team prototype exploring how EEG signals could provide
+                hands-free commands to a small robotic vehicle.
+              </p>
+              <p>
+                As team leader, I worked on integrating a NeuroSky MindWave EEG headset
+                with an Arduino-controlled car. The project combined signal acquisition,
+                Python-based processing, machine-learning experiments, and embedded
+                hardware to translate selected signals into movement.
+              </p>
+              <div class="project-facts">
+                <div><span>MY ROLE</span><strong>Team leader</strong></div>
+                <div><span>REPORTED RESULT</span><strong>~78% left/right accuracy</strong></div>
+                <div><span>SHOWCASE</span><strong>GBY Kıbrıs Project Market</strong></div>
+              </div>
+              <div class="project-detail-block">
+                <h3>System components</h3>
+                <div class="project-tags">
+                  <span>NeuroSky MindWave</span><span>ThinkGear Connector</span>
+                  <span>Python</span><span>MATLAB</span><span>Scikit-learn</span>
+                  <span>SVM</span><span>Random Forest</span><span>Arduino</span>
+                  <span>L298N motor driver</span><span>HC-06 Bluetooth</span>
+                </div>
+              </div>
+              <div class="project-detail-block">
+                <h3>Prototype command logic</h3>
+                <div class="command-grid">
+                  <div><span>Attention above 60</span><strong>Move forward</strong></div>
+                  <div><span>Meditation above 60</span><strong>Move backward</strong></div>
+                  <div><span>Attention below 30</span><strong>Stop</strong></div>
+                  <div><span>Blink signal / double blink</span><strong>Turn left / right</strong></div>
+                </div>
+              </div>
+              <div class="project-detail-block">
+                <h3>Challenges &amp; learning</h3>
+                <p>
+                  The team worked through inconsistent EEG signal quality, intermittent
+                  zero-valued readings, headset-to-computer communication, serial and
+                  Bluetooth links, and Python-to-Arduino integration. The project was
+                  presented at the Genç Beyinler Yeni Fikirler – Kıbrıs Project Market
+                  and Joint Graduation Exhibition at Lefke European University.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail" id="inventory-project">
+            <div class="project-detail-art project-art inventory-art">
+              <span class="art-index">02 — FIELD OPERATIONS</span>
+              <div class="inventory-device">
+                <div class="qr-code" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+                <div><span class="device-line"></span><span class="device-line short"></span><span class="device-pill">ASSET ID · 042</span></div>
+              </div>
+              <div class="scan-ring"></div>
+              <span class="art-caption">IDENTIFY · RECORD · TRACK</span>
+            </div>
+            <div class="project-detail-content">
+              <div class="project-meta"><span>HEALTHCARE TECHNOLOGY · ASSET MANAGEMENT</span><span>PNN · 2025</span></div>
+              <h2>QR-coded medical equipment inventory</h2>
+              <p class="project-lead">
+                Fieldwork supporting digital identification and inventory tracking of
+                medical equipment across healthcare facilities in Northern Cyprus.
+              </p>
+              <p>
+                As a Biomedical Engineering Trainee in field and inventory operations,
+                I gathered equipment details, recorded hospitals and departments,
+                entered asset information into the inventory application, and applied
+                QR identification labels. The workflow was intended to help staff
+                identify devices and report faults or maintenance needs.
+              </p>
+              <div class="project-facts">
+                <div><span>MY ROLE</span><strong>Field &amp; inventory operations</strong></div>
+                <div><span>ORGANIZATION</span><strong>Primum Non Nocere (PNN)</strong></div>
+                <div><span>SELECTION</span><strong>5 of approximately 39–40 applicants</strong></div>
+              </div>
+              <div class="project-detail-block">
+                <h3>My contribution</h3>
+                <div class="project-tags">
+                  <span>Equipment data collection</span><span>Device identification</span>
+                  <span>QR label application</span><span>Hospital and department records</span>
+                  <span>Inventory data entry</span><span>Tracking workflow support</span>
+                </div>
+              </div>
+              <p class="project-caveat">
+                My contribution was field data collection and inventory implementation;
+                I did not develop the inventory application.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-detail" id="vehicle-project">
+            <div class="project-detail-art project-art vehicle-art">
+              <span class="art-index">03 — ENGINEERING BUILD</span>
+              <div class="vehicle-sun"></div>
+              <div class="vehicle-track"></div>
+              <div class="vehicle">
+                <span class="vehicle-cabin"></span><span class="wheel wheel-one"></span><span class="wheel wheel-two"></span>
+              </div>
+              <span class="art-caption">DESIGN · BUILD · TEST</span>
+            </div>
+            <div class="project-detail-content">
+              <div class="project-meta"><span>MECHANICAL · ELECTRICAL</span><span>ACADEMIC PROJECT</span></div>
+              <h2>Electric-powered weight-carrying vehicle</h2>
+              <p class="project-lead">
+                An engineering project focused on constructing and testing an
+                electric-powered vehicle designed to carry a load.
+              </p>
+              <p>
+                This project gave me another opportunity to work across physical
+                construction and engineering testing. The available project summary
+                does not include the motor specifications, load capacity, circuit
+                design, or measured test results, so those details are intentionally
+                not estimated here.
+              </p>
+              <div class="project-detail-block">
+                <h3>Project scope</h3>
+                <div class="project-tags">
+                  <span>Vehicle construction</span><span>Electric propulsion</span>
+                  <span>Weight-carrying design</span><span>Prototype testing</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail" id="software-project">
+            <div class="project-detail-art project-art software-art">
+              <span class="art-index">04 — SOFTWARE DEVELOPMENT</span>
+              <div class="code-window">
+                <div class="code-window-top"><i></i><i></i><i></i><span>PROJECTS / BUILD</span></div>
+                <div class="code-lines" aria-hidden="true">
+                  <span class="code-line line-short"></span><span class="code-line line-long"></span>
+                  <span class="code-line line-medium"></span><span class="code-line line-long"></span>
+                  <span class="code-line line-short"></span><span class="code-line line-medium"></span>
+                </div>
+              </div>
+              <span class="art-caption">DESIGN · CODE · ITERATE</span>
+            </div>
+            <div class="project-detail-content">
+              <div class="project-meta"><span>WEB · APPLICATIONS · DEBUGGING</span><span>DEVELOPMENT WORK</span></div>
+              <h2>Web development &amp; software projects</h2>
+              <p class="project-lead">
+                Software development work spanning frontend interfaces, application
+                logic, backend fundamentals, and debugging.
+              </p>
+              <p>
+                My development experience includes work with HTML, CSS, JavaScript,
+                React, and PHP, along with Git and GitHub for version control and
+                repository workflows. I have also worked through web-application
+                debugging and deployment issues.
+              </p>
+              <div class="project-detail-block">
+                <h3>Tools &amp; technologies</h3>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  <span>React</span><span>PHP</span><span>Git</span><span>GitHub</span>
+                </div>
+              </div>
+              <p class="project-caveat">
+                Individual application names, public repositories, and live demos were
+                not included in the supplied project details.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-cta">
+        <div class="container project-cta-inner">
+          <div>
+            <p class="eyebrow">NEXT / ABOUT DANIEL</p>
+            <h2>More about the engineer behind the work.</h2>
+          </div>
+          <a class="button button-dark" href="index.html#about">Back to portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="index.html#home"><span class="brand-mark">DO</span><span>DANIEL OFFEM<span class="brand-dot">.</span></span></a>
+        <span>Biomedical Engineer · Robotics &amp; AI</span>
+        <a href="#main">BACK TO TOP ↑</a>
+        <span class="copyright">© <span id="year">2026</span></span>
+      </div>
+    </footer>
+  </body>
+</html>
