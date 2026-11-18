@@ -24,7 +24,7 @@ button { font: inherit; }
 .site-header { position: sticky; top: 0; z-index: 10; background: rgba(246, 247, 242, .91); border-bottom: 1px solid rgba(220, 225, 216, .78); backdrop-filter: blur(14px); }
 .nav { height: 76px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font: 800 12px var(--display); letter-spacing: .12em; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; background: var(--deep-green); color: var(--green); border-radius: 50%; font: 700 11px var(--display); letter-spacing: -.04em; }
+.brand-mark { display: block; width: 45px; height: 34px; object-fit: contain; border-radius: 50%; }
 .brand-dot { color: #638735; }
 .nav-links { display: flex; align-items: center; gap: 33px; color: #59645d; font-size: 12px; font-weight: 600; }
 .nav-links > a:not(.nav-cta):hover, .text-link:hover { color: #668b36; }
@@ -200,7 +200,7 @@ h1 span, h2 em { color: #68884a; font-family: var(--serif); font-weight: 400; }
 .site-footer { padding: 23px 0; border-top: 1px solid #e0e5dc; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #77827a; font: 9px "DM Mono", monospace; }
 .footer-brand { color: var(--ink); font-family: var(--display); }
-.footer-brand .brand-mark { width: 29px; height: 29px; font-size: 9px; }
+.footer-brand .brand-mark { width: 38px; height: 29px; }
 .footer-links { display: flex; align-items: center; gap: 14px; }
 .footer-links a:hover { color: #668b36; }
 .footer-inner > a:last-of-type { letter-spacing: .07em; }
